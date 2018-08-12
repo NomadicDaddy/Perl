@@ -1,0 +1,62 @@
+logcycle v1.13.1.1
+Copyright © 1999-2005 adminware, llc.  All rights reserved.
+
+Introduction
+============
+
+logcycle simply cycles logfiles that don't cycle themselves using a
+date/timestamp.
+
+
+Usage
+=====
+
+logcycle {options}
+
+  -directory     Directory to Process          [.]
+  -exclude       File(s) to Exclude            [none]
+  -include       File(s) to Include Only       [all]
+  -recurse       Directory Recursion: ON       [on]
+  -norecurse     Directory Recursion: OFF
+
+  -test          Test Mode: ON
+  -notest        Test Mode: OFF                [on]
+
+  -noquiet       Output Verbosity: Verbose     [on]
+  -quiet         Output Verbosity: Terse
+  -log           Output to Specified Logfile   []
+
+  -help | ?      Show This Help Text
+  -man           Display Documentation
+  -version       Show Version
+
+
+Revision History
+================
+ 1.13.1.1      -- Rebuilt with awtools library. [PB]
+ 1.12.77.1     -- Re-wrote directory recursion routine. [PB]
+ 1.11.75.1     -- Fixed bug when handling directories with spaces. [PB]
+ 1.1.50.1      -- Implemented exclude/include filters. [PB]
+ 1.0.221.1     -- Added directory recursion. [PB]
+
+
+To-Do List
+==========
+ - Nothing further needed.
+
+
+Example Usage #1
+================
+
+I want to cycle all *.log files from the current directory.
+
+logcycle -norecurse
+
+
+Example Usage #2
+================
+
+I want to cycle all *.log files in a specific directory except for ones containing
+POST.
+
+logcycle -dir c:/winnt/temp -exclude post

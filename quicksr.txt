@@ -1,0 +1,70 @@
+quicksr v1.0.0.0
+Copyright © 2006 adminware, llc.  All rights reserved.
+
+Introduction
+============
+
+quicksr allows you to quickly search and replace within a textfile.
+
+
+Usage
+=====
+
+quicksr {options}
+
+  -filename      File to Process
+  -search        Search Pattern
+  -replace       Replace String
+  -newfilename   New File to Output To         [overwrite existing]
+  -count         Count Hits Only               [off]
+
+  -test          Test Mode                     [off]
+  -quiet         Terse Output Verbosity        [off]
+  -log           Output to Specified Logfile   []
+  -help | ?      Show This Help Text
+  -man           Display Documentation
+  -version       Show Version
+
+
+Revision History
+================
+ 1.0.0.0       -- Initial release. [PB]
+
+
+To-Do List
+==========
+ - Nothing further needed.
+
+
+Example Usage #1
+================
+
+I want to replace every occurrence of 127.0.0.1 in a logfile with
+localhost.
+
+quicksr -f mylogfile.log -s "127.0.0.1" -r "localhost"
+
+
+Example Usage #2
+================
+
+I want to remove the word "debugger".
+
+quicksr -f mylogfile.log -s "debugger" -r ""
+
+
+Example Usage #3
+================
+
+I want to simply count the number of lines containing "smtp".
+
+quicksr -f mylogfile.log -s "smtp" -c
+
+
+Example Usage #4
+================
+
+I want to replace every occurrence of 127.0.0.1 in a logfile with
+localhost but output the resulting changes to a new file.
+
+quicksr -f mylogfile.log -s "127.0.0.1" -r "localhost" -n newlogfile.log

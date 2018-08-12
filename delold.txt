@@ -1,0 +1,65 @@
+delold v1.26.1.1
+Copyright © 2001-2005 adminware, llc.  All rights reserved.
+
+Introduction
+============
+
+delold is a simple little tool for deleting old files within a directory or
+directory tree that match certain criteria (file name/extension, age).
+
+
+Usage
+=====
+
+delold {options}
+
+  -directory     Directory to Process          [.]
+  -exclude       File(s) to Exclude            [none]
+  -include       File(s) to Include Only       [all]
+  -age           Age in Days to Process        [0]
+  -recurse       Directory Recursion: ON       [on]
+  -norecurse     Directory Recursion: OFF
+
+  -test          Test Mode: ON                 [on]
+  -notest        Test Mode: OFF
+
+  -noquiet       Output Verbosity: Verbose     [on]
+  -quiet         Output Verbosity: Terse
+  -log           Output to Specified Logfile   []
+
+  -help | ?      Show This Help Text
+  -man           Display Documentation
+  -version       Show Version
+
+
+Revision History
+================
+ 1.26.1.1      -- Rebuilt with awtools library. [PB]
+ 1.25.76.1     -- Re-wrote directory recursion routine. [PB]
+ 1.24.75.1     -- Changed to test mode by default.  Don't ask. [PB]
+ 1.23.75.1     -- Fixed bug when handling directories with spaces. [PB]
+ 1.22.50.1     -- Implemented exclude/include filters. [PB]
+ 1.21.106.1    -- Added directory recursion. [PB]
+
+
+To-Do List
+==========
+ - Nothing further needed.
+
+
+Example Usage #1
+================
+
+I want to delete all files from the current directory that are older than 15
+days.
+
+delold -age 15 -norecurse -notest
+
+
+Example Usage #2
+================
+
+I want to delete all files from the c:\winnt\temp directory and all sub-
+directories that are older than 3 days.
+
+delold -dir c:/winnt/temp -age 3 -norecurse -notest

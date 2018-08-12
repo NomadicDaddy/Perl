@@ -1,0 +1,55 @@
+servusql v1.1.62.1
+Copyright © 2003-2005 adminware, llc.  All rights reserved.
+
+Introduction
+============
+
+servusql converts users in the Serv-U .ini to SQL insert statements (to greatly
+speed up migration to Serv-U's new ODBC functionality).
+
+
+Usage
+=====
+
+servusql {options}
+
+  -inputFile     Path/Filename of Serv-U Ini
+  -outputFile    Path/Filename of Output File
+  -mysql         Generate mySQL Format         [off]
+  -truncate      Truncate Existing Data First  [off]
+
+  -test          Test Mode                     [off]
+  -quiet         Terse Output Verbosity        [off]
+  -log           Output to Specified Logfile   []
+  -help | ?      Show This Help Text
+  -man           Display Documentation
+  -version       Show Version
+
+
+Revision History
+================
+ 1.1.62.1      -- Removed user limitations. [PB]
+ 1.1.1.1       -- Rebuilt with awtools library. [PB]
+ 1.03.167.1    -- Fixed a discrepancy with ReadOnly admins. [PB]
+ 1.02.36.2     -- Removed index for dir/ip address tables for mySQL. [PB]
+ 1.02.36.1     -- Fixed directory escaping for mySQL. [PB]
+ 1.02.35.1     -- Added mySQL formatted output. [PB]
+ 1.01.4.1      -- Cleaned up for release. [PB]
+ 1.00.338.1    -- First working version for internal use. [PB]
+
+
+Notes
+=====
+ - Domains are not handled.  Gathers all users regardless.  Break up .ini into
+   multiple files if you have multiple domains setup.
+ - Groups are not handled (due to lack of real-world samples).  If you need
+   this, please send me a *sanitized* copy of your .ini and I'll see what I
+   can do.
+
+
+Example Usage
+=============
+
+servusql -in "C:\Program Files\Serv-U\ServUDaemon.ini"
+servusql -in "C:\Program Files\Serv-U\ServUDaemon.ini" -out ServU.sql -truncate
+servusql -mysql -in "C:\Program Files\Serv-U\ServUDaemon.ini"

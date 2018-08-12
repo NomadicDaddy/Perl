@@ -1,0 +1,69 @@
+ipmap v0.91.1.1
+Copyright © 2003-2005 adminware, llc.  All rights reserved.
+
+Introduction
+============
+
+ipmap allows you to map the allocated IP addresses on all (or specific) servers
+in your network.
+
+
+Usage
+=====
+
+ipmap {options}
+
+  -server        Process Specified Server
+  -svtype        Enumerate Specific Type       ['ALL']
+  -expand        One Line Per IP: ON
+  -noexpand      One Line Per IP: OFF          [on]
+
+  -test          Test Mode: ON
+  -notest        Test Mode: OFF                [on]
+
+  -noquiet       Output Verbosity: Verbose     [on]
+  -quiet         Output Verbosity: Terse
+  -log           Output to Specified Logfile   []
+
+  -help | ?      Show This Help Text
+  -man           Display Documentation
+  -version       Show Version
+
+
+Revision History
+================
+ 0.91.1.1      -- Rebuilt with awtools library. [PB]
+ 0.90.222.1    -- Created documentation, added man option. [PB]
+ 0.90.221.1    -- Added quiet, log and svtype options. [PB]
+
+
+To-Do List
+==========
+ - Finish SV_TYPE handling.
+ - Finish expand.
+ - Figure out why XP can't be enumerated.
+
+
+Example Usage #1
+================
+
+I want to produce an IP map for a single server named EXAMPLE.
+
+ipmap -server EXAMPLE
+
+
+Example Usage #2
+================
+
+I want an IP map for everything I can see on the network, directed to
+ipmap.csv.
+
+ipmap -log ipmap.csv
+
+
+Example Usage #3
+================
+
+I want an IP map of only SQL Servers on the network.
+
+ipmap -svtype SQLSERVER

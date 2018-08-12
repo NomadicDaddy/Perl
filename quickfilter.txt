@@ -1,0 +1,75 @@
+quickfilter v1.31.1.1
+Copyright © 1999-2005 adminware, llc.  All rights reserved.
+
+Introduction
+============
+
+quickfilter allows you to remove or keep only the lines in a textfile matching
+the specified pattern.
+
+
+Usage
+=====
+
+quickfilter {options}
+
+  -filename      File to Filter
+  -pattern       Search Pattern
+  -newfilename   New File to Output To         [overwrite existing]
+  -exclude       Exclude Pattern               [off]
+  -count         Count Hits Only               [off]
+
+  -test          Test Mode: ON
+  -notest        Test Mode: OFF                [on]
+
+  -noquiet       Output Verbosity: Verbose     [on]
+  -quiet         Output Verbosity: Terse
+  -log           Output to Specified Logfile   []
+
+  -help | ?      Show This Help Text
+  -man           Display Documentation
+  -version       Show Version
+
+
+Revision History
+================
+ 1.31.1.1      -- Rebuilt with awtools library. [PB]
+ 1.3.266.1     -- Cleaned up for release. [PB]
+
+
+To-Do List
+==========
+ - Nothing further needed.
+
+
+Example Usage #1
+================
+
+I want to strip out every line in a logfile except those with 127.0.0.1 on
+them.
+
+quickfilter -f mylogfile.log -p "127.0.0.1"
+
+
+Example Usage #2
+================
+
+I want to remove any lines containing "debugger".
+
+quickfilter -f mylogfile.log -p "debug" -e
+
+
+Example Usage #3
+================
+
+I want to simply count the number of lines containing "smtp".
+
+quickfilter -f mylogfile.log -p "smtp" -c
+
+
+Example Usage #4
+================
+
+I want to extract lines containing "localhost" to a second file.
+
+quickfilter -f mylogfile.log -p "localhost" -n newlogfile.log

@@ -1,0 +1,110 @@
+logarc v1.27.1.1
+Copyright © 2001-2006 adminware, llc.  All rights reserved.
+
+Introduction
+============
+
+logarc gathers logfiles matching several filters (see below) and zips them
+into month-based archives.
+
+
+Usage
+=====
+
+logarc {options}
+
+  -directory     Source Directory              [.]
+  -target        Target Directory              [.]
+  -exclude       File(s) to Exclude            [none]
+  -include       File(s) to Include Only       [all]
+  -zipcmd        Zip Cmd/Opts                  [pkzip -add -move -fast]
+  -recurse       Directory Recursion           [on]
+  -move          Move Files Only               [off]
+  -notoday       Don't Touch Today's Logs      [on]
+  -delzero       Delete Zero Byte Logs         [off]
+  -subdirs       Mirrored Subdirs              [off]
+  -ignlog        Ignore Directories in Subdirs []
+
+  -test          Test Mode                     [off]
+  -quiet         Terse Output Verbosity        [off]
+  -log           Output to Specified Logfile   []
+  -help | ?      Show This Help Text
+  -man           Display Documentation
+  -version       Show Version
+
+
+Revision History
+================
+ 1.27.1.1      -- Corrected a problem with delzero and directories
+                  matching the logfile regex. [pb]
+ 1.26.1.1      -- Enhanced subdirs/ignlog options. [pb]
+ 1.25.1.1      -- Added delete option. [pb]
+ 1.24.1.1      -- Added ignlog option (ignore log dir in web subdirs). [pb]
+ 1.23.1.1      -- Added subdirs option. [pb]
+ 1.22.1.1      -- Added option to delete empty logs. [pb]
+ 1.21.1.1      -- Added cycle option. [pb]
+ 1.20.1.1      -- Renamed logarc. [pb]
+ 1.20.1.1      -- Added target directory option. [pb]
+ 1.19.1.1      -- Added move option. [pb]
+ 1.18.1.1      -- Added option to skip today's logs. [pb]
+ 1.17.1.1      -- Rebuilt with awtools library. [pb]
+ 1.16.302.1    -- Added another format. [pb]
+ 1.15.77.1     -- Re-wrote directory recursion routine. [pb]
+ 1.14.74.1     -- Added RM & URLScan logfile support. [pb]
+ 1.13.70.1     -- Fixed bug when handling directories with spaces. [pb]
+ 1.12.50.1     -- Implemented exclude/include filters. [pb]
+ 1.11.17.1     -- Added directory recursion. [pb]
+
+
+To-Do List
+==========
+ - Nothing further needed.
+
+
+Log Types Handled
+=================
+
+FILTER 1:	virus_20031104050011.log		->	virus_200311.zip
+FILTER 2:	SMTP20040104.log			->	SMTP200401.zip
+FILTER 3:	onvix-20040104-1.log		->	onvix-200401.zip
+FILTER 4:	10282004.log				->	200410.zip
+FILTER 5:	nc030318.log				->	nc0303.zip
+FILTER 6:	post.office-0124.log		->	post.office-01.zip
+FILTER 7:	ftp-04Jan2004.log			->	ftp-2004Jan.zip
+FILTER 8:	urlscan.011804.log			->	urlscan.0401.zip
+FILTER 9:	rm-access.log.20040207010914	->	rm-access.log.200401.zip
+
+
+Example Usage #1
+================
+
+I want to consolidate by year/month all logfiles in the current directory and any
+underneath.
+
+logarc
+
+
+Example Usage #2
+================
+
+I want to cosolidate only the matching files in a specific directory.
+
+logarc -norecurse -dir c:/logfiles/ -inc wsp*.log
+
+
+Example Usage #3
+================
+
+I want to cosolidate all files in specified directory to a second target directory,
+skipping today's logs.
+
+logarc -norecurse -dir c:/logfiles/ -target c:/logarc/
+
+
+Example Usage #4
+================
+
+I want to move all files in specified directory to a second target directory for
+further processing later.
+
+logarc -norecurse -dir c:/logfiles/ -move -target c:/logarc/

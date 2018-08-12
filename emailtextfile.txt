@@ -1,0 +1,48 @@
+emailtextfile 1.21.1.1
+Copyright © 1999-2005 adminware, llc.  All rights reserved.
+
+Introduction
+============
+
+emailtextfile allows you to email a textfile to one or more recipients and
+optionally delete the file after sending.
+
+
+Usage
+=====
+
+emailtextfile {options}
+
+  -filename      File to Send
+  -address       Email Address(es) to Send to
+  -subject       Email Subject                 ['[Email TextFile] <name>']
+  -server        SMTP Server to Send Through   ['smtp']
+  -delete        Delete After Sending: ON
+  -nodelete      Delete After Sending: OFF     [on]
+
+  -noquiet       Output Verbosity: Verbose     [on]
+  -quiet         Output Verbosity: Terse
+  -log           Output to Specified Logfile   []
+
+  -help | ?      Show This Help Text
+  -man           Display Documentation
+  -version       Show Version
+
+
+Revision History
+================
+ 1.21.1.1      -- Rebuilt with awtools library. [PB]
+ 1.2.273.2     -- Added subject option. [PB]
+
+
+To-Do List
+==========
+ - Nothing further needed.
+
+
+Example Usage
+=============
+
+I want to email a logfile to myself and delete it afterwards.
+
+emailtextfile -filename errors.log -address bob@saget.com -subject "Error Log" -server smtp.saget.com -delete

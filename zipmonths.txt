@@ -1,0 +1,79 @@
+zipmonths v1.17.1.1
+Copyright © 2001-2005 adminware, inc.  All rights reserved.
+
+Introduction
+============
+
+zipmonths gathers logfiles matching several filters (see below) and zips them
+into month-based archives.
+
+
+Usage
+=====
+
+zipmonths {options}
+
+  -directory     Directory to Process          [.]
+  -exclude       File(s) to Exclude            [none]
+  -include       File(s) to Include Only       [all]
+  -zipcmd        Zip Cmd/Opts                  [pkzip -add -move -max]
+  -recurse       Directory Recursion: ON       [on]
+  -norecurse     Directory Recursion: OFF
+
+  -test          Test Mode: ON
+  -notest        Test Mode: OFF                [on]
+
+  -noquiet       Output Verbosity: Verbose     [on]
+  -quiet         Output Verbosity: Terse
+  -log           Output to Specified Logfile   []
+
+  -help | ?      Show This Help Text
+  -man           Display Documentation
+  -version       Show Version
+
+
+Revision History
+================
+ 1.17.1.1      -- Rebuilt with awtools library. [PB]
+ 1.16.302.1    -- Added another format. [PB]
+ 1.15.77.1     -- Re-wrote directory recursion routine. [PB]
+ 1.14.74.1     -- Added RM & URLScan logfile support. [PB]
+ 1.13.70.1     -- Fixed bug when handling directories with spaces. [PB]
+ 1.12.50.1     -- Implemented exclude/include filters. [PB]
+ 1.11.17.1     -- Added directory recursion. [PB]
+
+
+To-Do List
+==========
+ - Nothing further needed.
+
+
+Log Types Handled
+=================
+
+FILTER 1:	virus_20031104050011.log		->	virus_200311.zip
+FILTER 2:	SMTP20040104.log			->	SMTP200401.zip
+FILTER 3:	onvix-20040104-1.log		->	onvix-200401.zip
+FILTER 4:	10282004.log				->	200410.zip
+FILTER 5:	nc030318.log				->	nc0303.zip
+FILTER 6:	post.office-0124.log		->	post.office-01.zip
+FILTER 7:	ftp-04Jan2004.log			->	ftp-2004Jan.zip
+FILTER 8:	urlscan.011804.log			->	urlscan.0401.zip
+FILTER 9:	rm-access.log.20040207010914	->	rm-access.log.200401.zip
+
+
+Example Usage #1
+================
+
+I want to consolidate by year/month all logfiles in the current directory and any
+underneath.
+
+zipmonths
+
+
+Example Usage #2
+================
+
+I want to cosolidate only the matching files in a specific directory.
+
+zipmonths -norecurse -dir c:/logfiles/ -inc wsp*.log

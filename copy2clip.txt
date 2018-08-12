@@ -1,0 +1,49 @@
+copy2clip v1.1.1.1
+Copyright © 1999-2005 adminware, llc.  All rights reserved.
+
+Introduction
+============
+
+copy2clip allows you to quickly copy the contents of a file to your clipboard
+without having to open the file, selecting everything and hitting Control-C.
+
+Yes, I'm THAT lazy.  :)
+
+I've added a right-click menu option to my file browser that allows me to do
+this from that as well as command line.  Very handy!
+
+
+Usage
+=====
+
+copy2clip {options}
+
+  -filename      File to Copy to Clipboard
+
+  -test          Test Mode: ON
+  -notest        Test Mode: OFF                [on]
+
+  -noquiet       Output Verbosity: Verbose     [on]
+  -quiet         Output Verbosity: Terse
+  -log           Output to Specified Logfile   []
+
+  -help | ?      Show This Help Text
+  -man           Display Documentation
+  -version       Show Version
+
+
+Revision History
+================
+ 1.1.1.1       -- Rebuilt with awtools library. [PB]
+ 1.0.210.1     -- Cleaned up for release. [PB]
+
+
+To-Do List
+==========
+ - Nothing further needed.
+
+
+Example Usage
+=============
+
+copy2clip -f textfile.txt

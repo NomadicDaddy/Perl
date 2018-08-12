@@ -1,0 +1,61 @@
+proctones v1.0.0.1
+Copyright © 2009 adminware, llc.  All rights reserved.
+
+Introduction
+============
+
+proctones is a simple little tool for creating a custom ringtones list for
+upload to a jailbroken iPhone.
+
+The ringtone files should be placed in:
+Media/iTunes_Control/Ringtones/
+
+The Ringtones.plist file should be placed in:
+Media/iTunes_Control/iTunes/
+
+
+Usage
+=====
+
+proctones {options}
+
+  -directory     Directory to Process          [.]
+
+  -test          Test Mode: ON                 [on]
+  -notest        Test Mode: OFF
+
+  -noquiet       Output Verbosity: Verbose     [on]
+  -quiet         Output Verbosity: Terse
+  -log           Output to Specified Logfile   []
+
+  -help | ?      Show This Help Text
+  -man           Display Documentation
+  -version       Show Version
+
+
+Revision History
+================
+ 1.0.0.1       -- First release. [PB]
+
+
+To-Do List
+==========
+ - Nothing further needed.
+
+
+Example Usage #1
+================
+
+I want to generate a Ringtones.plist file for all applicable files in the
+current directory.
+
+proctones
+
+
+Example Usage #2
+================
+
+I want to generate a Ringtones.plist file for all applicable files in
+another directory.
+
+proctones -dir E:\_iphone\mobile\Media\iTunes_Control\iTunes
