@@ -4,8 +4,8 @@
    --trim-implicit --shared private --force --dyndll --runlib "." --verbose --freestanding --nologo --icon "d:/adminware/artwork/aw.ico"
    --info "CompanyName      = adminware, llc;
            FileDescription  = quicksr - the quick text file search and replacer;
-           Copyright        = Copyright © 2006 adminware, llc.  All rights reserved.;
-           LegalCopyright   = Copyright © 2006 adminware, llc.  All rights reserved.;
+           Copyright        = Copyright ï¿½ 2006 adminware, llc;
+           LegalCopyright   = Copyright ï¿½ 2006 adminware, llc;
            LegalTrademarks  = adminware is a trademark of adminware, llc;
            SupportURL       = http://www.adminware.com/tools/;
            Comments         = ;
@@ -20,7 +20,7 @@
 
 our $awp = 'quicksr';
 our $ver = '1.0.0.0';
-our $cpy = 'Copyright © 2006 adminware, llc.  All rights reserved.';
+our $cpy = 'Copyright ï¿½ 2006 adminware, llc';
 
 use strict;
 use warnings;

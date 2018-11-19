@@ -1,5 +1,5 @@
 my $awpv	= 'adminware Multi-Do v1.0.219.1';
-my $copyr	= 'Copyright © 2001 adminware, llc.  All rights reserved.';
+my $copyr	= 'Copyright ï¿½ 2001 adminware, llc';
 my $syntx	= "Syntax: $0 <command to run> <file extension>";
 
 use strict;

@@ -4,8 +4,8 @@
    --trim-implicit --shared private --force --dyndll --runlib "." --verbose --freestanding --nologo --icon "d:/adminware/artwork/aw.ico"
    --info "CompanyName      = adminware, llc;
            FileDescription  = ipmap - the Windows LAN IP Address mapper;
-           Copyright        = Copyright © 2003-2005 adminware, llc.  All rights reserved.;
-           LegalCopyright   = Copyright © 2003-2005 adminware, llc.  All rights reserved.;
+           Copyright        = Copyright ï¿½ 2003-2005 adminware, llc;
+           LegalCopyright   = Copyright ï¿½ 2003-2005 adminware, llc;
            LegalTrademarks  = adminware is a trademark of adminware, llc;
            SupportURL       = http://www.adminware.com/tools/;
            InternalName     = ipmap;
@@ -19,7 +19,7 @@
 
 our $awp = 'ipmap';
 our $ver = '0.91.1.1';
-our $cpy = 'Copyright © 2003-2005 adminware, llc.  All rights reserved.';
+our $cpy = 'Copyright ï¿½ 2003-2005 adminware, llc';
 
 use strict;
 #use warnings;

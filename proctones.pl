@@ -3,8 +3,8 @@
    --trim-implicit --shared none --force --dyndll --norunlib --verbose --freestanding --nologo --icon "d:/adminware/artwork/aw.ico"
    --info "CompanyName      = adminware, llc;
            FileDescription  = proctones - custom ringtone prep for iPhone;
-           Copyright        = Copyright © 2009 adminware, llc.  All rights reserved.;
-           LegalCopyright   = Copyright © 2009 adminware, llc.  All rights reserved.;
+           Copyright        = Copyright ï¿½ 2009 adminware, llc;
+           LegalCopyright   = Copyright ï¿½ 2009 adminware, llc;
            LegalTrademarks  = adminware is a trademark of adminware, llc;
            SupportURL       = http://www.adminware.com/tools/;
            InternalName     = proctones;
@@ -18,7 +18,7 @@
 
 our $awp = 'proctones';
 our $ver = '1.0.0.1';
-our $cpy = 'Copyright © 2009 adminware, llc.  All rights reserved.';
+our $cpy = 'Copyright ï¿½ 2009 adminware, llc';
 
 use strict;
 #use warnings;

@@ -4,8 +4,8 @@
    --trim-implicit --shared private --force --dyndll --runlib "." --verbose --freestanding --nologo --icon "x:/adminware/artwork/aw.ico"
    --info "CompanyName      = adminware, llc;
            FileDescription  = delold - the old file remover;
-           Copyright        = Copyright © 2001-2010 adminware, llc.  All rights reserved.;
-           LegalCopyright   = Copyright © 2001-2010 adminware, llc.  All rights reserved.;
+           Copyright        = Copyright ï¿½ 2001-2010 adminware, llc;
+           LegalCopyright   = Copyright ï¿½ 2001-2010 adminware, llc;
            LegalTrademarks  = adminware is a trademark of adminware, llc;
            SupportURL       = http://www.adminware.com/tools/;
            InternalName     = delold;
@@ -19,7 +19,7 @@
 
 our $awp = 'delold';
 our $ver = '1.27.1.1';
-our $cpy = 'Copyright © 2001-2010 adminware, llc.  All rights reserved.';
+our $cpy = 'Copyright ï¿½ 2001-2010 adminware, llc';
 
 use strict;
 #use warnings;

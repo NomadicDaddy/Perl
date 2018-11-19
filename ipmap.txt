@@ -1,5 +1,5 @@
 ipmap v0.91.1.1
-Copyright © 2003-2005 adminware, llc.  All rights reserved.
+Copyright ï¿½ 2003-2005 adminware, llc
 
 Introduction
 ============

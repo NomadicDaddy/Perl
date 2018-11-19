@@ -1,5 +1,5 @@
 proctones v1.0.0.1
-Copyright © 2009 adminware, llc.  All rights reserved.
+Copyright ï¿½ 2009 adminware, llc
 
 Introduction
 ============
