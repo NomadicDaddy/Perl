@@ -2,11 +2,10 @@
    --exe trimbak.exe
    --use awtools.dll
    --trim-implicit --shared private --force --dyndll --runlib "." --verbose --freestanding --nologo --icon "x:/adminware/artwork/aw.ico"
-   --info "CompanyName      = adminware, llc;
+   --info "CompanyName      = Phillip Beazley;
            FileDescription  = trimbak - the backup file trimmer;
-           Copyright        = Copyright � 2010 adminware, llc;
-           LegalCopyright   = Copyright � 2010 adminware, llc;
-           LegalTrademarks  = adminware is a trademark of adminware, llc;
+           Copyright        = Copyright � 2010 Phillip Beazley;
+           LegalCopyright   = Copyright � 2010 Phillip Beazley;
            SupportURL       = http://www.adminware.com/tools/;
            InternalName     = trimbak;
            OriginalFilename = trimbak;
@@ -19,7 +18,7 @@
 
 our $awp = 'trimbak';
 our $ver = '1.0.0.1';
-our $cpy = 'Copyright � 2010 adminware, llc';
+our $cpy = 'Copyright � 2010 Phillip Beazley';
 
 use strict;
 #use warnings;

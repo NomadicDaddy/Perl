@@ -2,11 +2,10 @@
    --exe delold.exe
    --use awtools.dll
    --trim-implicit --shared private --force --dyndll --runlib "." --verbose --freestanding --nologo --icon "x:/adminware/artwork/aw.ico"
-   --info "CompanyName      = adminware, llc;
+   --info "CompanyName      = Phillip Beazley;
            FileDescription  = delold - the old file remover;
-           Copyright        = Copyright � 2001-2010 adminware, llc;
-           LegalCopyright   = Copyright � 2001-2010 adminware, llc;
-           LegalTrademarks  = adminware is a trademark of adminware, llc;
+           Copyright        = Copyright � 2001-2010 Phillip Beazley;
+           LegalCopyright   = Copyright � 2001-2010 Phillip Beazley;
            SupportURL       = http://www.adminware.com/tools/;
            InternalName     = delold;
            OriginalFilename = delold;
@@ -19,7 +18,7 @@
 
 our $awp = 'delold';
 our $ver = '1.27.1.1';
-our $cpy = 'Copyright � 2001-2010 adminware, llc';
+our $cpy = 'Copyright � 2001-2010 Phillip Beazley';
 
 use strict;
 #use warnings;

@@ -2,11 +2,10 @@
    --exe quicksr.exe
    --use awtools.dll
    --trim-implicit --shared private --force --dyndll --runlib "." --verbose --freestanding --nologo --icon "d:/adminware/artwork/aw.ico"
-   --info "CompanyName      = adminware, llc;
+   --info "CompanyName      = Phillip Beazley;
            FileDescription  = quicksr - the quick text file search and replacer;
-           Copyright        = Copyright � 2006 adminware, llc;
-           LegalCopyright   = Copyright � 2006 adminware, llc;
-           LegalTrademarks  = adminware is a trademark of adminware, llc;
+           Copyright        = Copyright � 2006 Phillip Beazley;
+           LegalCopyright   = Copyright � 2006 Phillip Beazley;
            SupportURL       = http://www.adminware.com/tools/;
            Comments         = ;
            InternalName     = quicksr;
@@ -20,7 +19,7 @@
 
 our $awp = 'quicksr';
 our $ver = '1.0.0.0';
-our $cpy = 'Copyright � 2006 adminware, llc';
+our $cpy = 'Copyright � 2006 Phillip Beazley';
 
 use strict;
 use warnings;

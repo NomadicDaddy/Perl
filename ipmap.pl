@@ -2,11 +2,10 @@
    --exe ipmap.exe
    --use awtools.dll
    --trim-implicit --shared private --force --dyndll --runlib "." --verbose --freestanding --nologo --icon "d:/adminware/artwork/aw.ico"
-   --info "CompanyName      = adminware, llc;
+   --info "CompanyName      = Phillip Beazley;
            FileDescription  = ipmap - the Windows LAN IP Address mapper;
-           Copyright        = Copyright � 2003-2005 adminware, llc;
-           LegalCopyright   = Copyright � 2003-2005 adminware, llc;
-           LegalTrademarks  = adminware is a trademark of adminware, llc;
+           Copyright        = Copyright � 2003-2005 Phillip Beazley;
+           LegalCopyright   = Copyright � 2003-2005 Phillip Beazley;
            SupportURL       = http://www.adminware.com/tools/;
            InternalName     = ipmap;
            OriginalFilename = ipmap;
@@ -19,7 +18,7 @@
 
 our $awp = 'ipmap';
 our $ver = '0.91.1.1';
-our $cpy = 'Copyright � 2003-2005 adminware, llc';
+our $cpy = 'Copyright � 2003-2005 Phillip Beazley';
 
 use strict;
 #use warnings;

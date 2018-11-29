@@ -1,11 +1,10 @@
 =for PDK_OPTS
    --exe proctones.exe
    --trim-implicit --shared none --force --dyndll --norunlib --verbose --freestanding --nologo --icon "d:/adminware/artwork/aw.ico"
-   --info "CompanyName      = adminware, llc;
+   --info "CompanyName      = Phillip Beazley;
            FileDescription  = proctones - custom ringtone prep for iPhone;
-           Copyright        = Copyright � 2009 adminware, llc;
-           LegalCopyright   = Copyright � 2009 adminware, llc;
-           LegalTrademarks  = adminware is a trademark of adminware, llc;
+           Copyright        = Copyright � 2009 Phillip Beazley;
+           LegalCopyright   = Copyright � 2009 Phillip Beazley;
            SupportURL       = http://www.adminware.com/tools/;
            InternalName     = proctones;
            OriginalFilename = proctones;
@@ -18,7 +17,7 @@
 
 our $awp = 'proctones';
 our $ver = '1.0.0.1';
-our $cpy = 'Copyright � 2009 adminware, llc';
+our $cpy = 'Copyright � 2009 Phillip Beazley';
 
 use strict;
 #use warnings;

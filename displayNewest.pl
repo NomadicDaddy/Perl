@@ -1,11 +1,10 @@
 =for PDK_OPTS
    --exe displayNewest.exe
    --trim-implicit --shared none --force --dyndll --norunlib --verbose --freestanding --nologo --icon "x:/adminware/artwork/aw.ico"
-   --info "CompanyName      = adminware, llc;
+   --info "CompanyName      = Phillip Beazley;
            FileDescription  = displayNewest - automatically display images as they are added to a folder;
-           Copyright        = Copyright � 2009 adminware, llc;
-           LegalCopyright   = Copyright � 2009 adminware, llc;
-           LegalTrademarks  = adminware is a trademark of adminware, llc;
+           Copyright        = Copyright � 2009 Phillip Beazley;
+           LegalCopyright   = Copyright � 2009 Phillip Beazley;
            SupportURL       = http://www.adminware.com/tools/;
            InternalName     = displayNewest;
            OriginalFilename = displayNewest;
@@ -18,7 +17,7 @@
 
 our $awp = 'displayNewest';
 our $ver = '1.0.0.0';
-our $cpy = 'Copyright � 2009 adminware, llc';
+our $cpy = 'Copyright � 2009 Phillip Beazley';
 
 use strict;
 #use warnings;

@@ -1,5 +1,5 @@
 quicksr v1.0.0.0
-Copyright � 2006 adminware, llc
+Copyright � 2006 Phillip Beazley
 
 Introduction
 ============

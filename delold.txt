@@ -1,5 +1,5 @@
 delold v1.26.1.1
-Copyright � 2001-2005 adminware, llc
+Copyright � 2001-2005 Phillip Beazley
 
 Introduction
 ============

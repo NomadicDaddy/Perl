@@ -2,11 +2,10 @@
    --exe zipmonths.exe
    --use awtools.dll
    --trim-implicit --shared private --force --dyndll --runlib "." --verbose --freestanding --nologo --icon "d:/adminware/artwork/aw.ico"
-   --info "CompanyName      = adminware, llc.;
+   --info "CompanyName      = Phillip Beazley.;
            FileDescription  = zipmonths - the logfile aggregator;
-           Copyright        = Copyright � 1999-2005 adminware, llc;
-           LegalCopyright   = Copyright � 1999-2005 adminware, llc;
-           LegalTrademarks  = adminware is a trademark of adminware, llc.;
+           Copyright        = Copyright � 1999-2005 Phillip Beazley;
+           LegalCopyright   = Copyright � 1999-2005 Phillip Beazley;
            SupportURL       = http://www.adminware.com/tools/;
            InternalName     = zipmonths;
            OriginalFilename = zipmonths;
@@ -19,7 +18,7 @@
 
 our $awp = 'zipmonths';
 our $ver = '1.17.1.1';
-our $cpy = 'Copyright � 1999-2005 adminware, llc';
+our $cpy = 'Copyright � 1999-2005 Phillip Beazley';
 
 use strict;
 #use warnings;

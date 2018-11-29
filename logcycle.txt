@@ -1,5 +1,5 @@
 logcycle v1.13.1.1
-Copyright � 1999-2005 adminware, llc
+Copyright � 1999-2005 Phillip Beazley
 
 Introduction
 ============

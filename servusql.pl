@@ -1,11 +1,10 @@
 =for PDK_OPTS
    --exe servusql.exe
    --trim-implicit --shared private --force --dyndll --runlib "." --verbose --freestanding --nologo --icon "d:/adminware/artwork/aw.ico"
-   --info "CompanyName      = adminware, llc;
+   --info "CompanyName      = Phillip Beazley;
            FileDescription  = servusql - the Serv-U Ini-to-SQL Converter;
-           Copyright        = Copyright � 2003-2005 adminware, llc;
-           LegalCopyright   = Copyright � 2003-2005 adminware, llc;
-           LegalTrademarks  = adminware is a trademark of adminware, llc;
+           Copyright        = Copyright � 2003-2005 Phillip Beazley;
+           LegalCopyright   = Copyright � 2003-2005 Phillip Beazley;
            SupportURL       = http://www.adminware.com/tools/;
            InternalName     = servusql;
            OriginalFilename = servusql;
@@ -18,7 +17,7 @@
 
 our $awp = 'servusql';
 our $ver = '1.1.62.1';
-our $cpy = 'Copyright � 2003-2005 adminware, llc';
+our $cpy = 'Copyright � 2003-2005 Phillip Beazley';
 
 use strict;
 #use warnings;

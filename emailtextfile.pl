@@ -2,11 +2,10 @@
    --exe emailtextfile.exe
    --use awtools.dll
    --trim-implicit --shared private --force --dyndll --runlib "." --verbose --freestanding --nologo --icon "d:/adminware/artwork/aw.ico"
-   --info "CompanyName      = adminware, llc;
+   --info "CompanyName      = Phillip Beazley;
            FileDescription  = emailtextfile - the textfile emailer;
-           Copyright        = Copyright � 1999-2007 adminware, llc;
-           LegalCopyright   = Copyright � 1999-2007 adminware, llc;
-           LegalTrademarks  = adminware is a trademark of adminware, llc;
+           Copyright        = Copyright � 1999-2007 Phillip Beazley;
+           LegalCopyright   = Copyright � 1999-2007 Phillip Beazley;
            SupportURL       = http://www.adminware.com/tools/;
            InternalName     = emailtextfile;
            OriginalFilename = emailtextfile;
@@ -19,7 +18,7 @@
 
 our $awp = 'emailtextfile';
 our $ver = '1.22.1.1';
-our $cpy = 'Copyright � 1999-2007 adminware, llc';
+our $cpy = 'Copyright � 1999-2007 Phillip Beazley';
 
 use strict;
 #use warnings;
